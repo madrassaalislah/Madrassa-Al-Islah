@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery & Events | Madrasa Al-Islah</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f9f6;
+  color: #263b30;
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, #06482f, #087b50);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header p {
+  margin: 8px 0 0;
+}
+
+nav {
+  background: #043c27;
+  text-align: center;
+  padding: 12px 5px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #168052;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e4f4e9, #f7fcf8);
+  text-align: center;
+  padding: 42px 18px;
+}
+
+.hero h2 {
+  color: #075c3b;
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 16px;
+}
+
+.gallery-section {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.gallery-section h3 {
+  color: #075c3b;
+  font-size: 23px;
+  margin: 0 0 8px;
+}
+
+.gallery-section p {
+  margin: 0 0 20px;
+  font-size: 15px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.photo-box {
+  aspect-ratio: 4 / 3;
+  border: 2px dashed #a7cbb4;
+  background: #f2f8f4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #72917b;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.committee-photo {
+  min-height: 190px;
+  border: 2px dashed #a7cbb4;
+  background: #f2f8f4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #72917b;
+  text-align: center;
+  padding: 18px;
+  font-size: 15px;
+}
+
+.note {
+  background: #e5f3e9;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.note h3 {
+  color: #075c3b;
+  margin-top: 0;
+}
+
+.home-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-button a {
+  display: inline-block;
+  background: #075c3b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #06482f;
+  color: white;
+  text-align: center;
+  padding: 23px 10px;
+  margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .hero h2 {
+    font-size: 27px;
+  }
+
+  .gallery-section {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Madrasa Al-Islah</h1>
+  <p>Islamic Education & General Education</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="teachers.html">Teachers</a>
+  <a href="academics.html">Academics</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="gallery.html" class="active">Gallery & Events</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+
+<section class="hero">
+  <h2>Gallery & Events</h2>
+
+  <p>
+    Explore the achievements, educational
+    activities, annual programmes,
+    and memorable moments of Madrasa Al-Islah.
+  </p>
+</section>
+
+<main>
+
+<!-- GALLERY 1: COMMITTEE AND TEACHERS -->
+
+<section class="gallery-section">
+
+  <h3>Madrasa Management Committee & Teachers</h3>
+
+  <p>
+    Photographs of the Madrasa Al-Islah
+    Management Committee, madrasa authorities,
+    and respected teachers.
+  </p>
+
+  <div class="committee-grid">
+
+    <div class="committee-photo">
+      Management Committee Photo 1
+    </div>
+
+    <div class="committee-photo">
+      Management Committee Photo 2
+    </div>
+
+    <div class="committee-photo">
+      Teachers Group Photo 1
+    </div>
+
+    <div class="committee-photo">
+      Teachers Group Photo 2
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY 2: BOARD ACHIEVEMENTS -->
+
+<section class="gallery-section">
+
+  <h3>North East India Board Examination Achievements</h3>
+
+  <p>
+    A special gallery for students who secure
+    first, second, and third positions in
+    North East India board examinations,
+    including photographs of award ceremonies.
+  </p>
+
+  <div class="photo-grid">
+    <div class="photo-box">Photo 1</div>
+    <div class="photo-box">Photo 2</div>
+    <div class="photo-box">Photo 3</div>
+  </div>
+
+</section>
+
+<!-- GALLERY 3: ANNUAL PROGRAMMES -->
+
+<section class="gallery-section">
+
+  <h3>Annual Programmes & Exhibitions</h3>
+
+  <p>
+    Photographs from annual programmes,
+    educational exhibitions,
+    student presentations,
+    and outstanding performances.
+  </p>
+
+  <div class="photo-grid">
+    <div class="photo-box">Photo 1</div>
+    <div class="photo-box">Photo 2</div>
+    <div class="photo-box">Photo 3</div>
+  </div>
+
+</section>
+
+<!-- GALLERY 4: ACADEMIC ACHIEVEMENTS -->
+
+<section class="gallery-section">
+
+  <h3>Academic Achievements</h3>
+
+  <p>
+    A gallery celebrating students
+    who achieve excellent results
+    in Madrasa Al-Islah examinations.
+  </p>
+
+  <div class="photo-grid">
+    <div class="photo-box">Photo 1</div>
+    <div class="photo-box">Photo 2</div>
+    <div class="photo-box">Photo 3</div>
+  </div>
+
+</section>
+
+<!-- GALLERY 5: TEACHERS -->
+
+<section class="gallery-section">
+
+  <h3>Our Respected Teachers</h3>
+
+  <p>
+    A special gallery for photographs
+    of the respected teachers of
+    Madrasa Al-Islah.
+  </p>
+
+  <div class="photo-grid">
+    <div class="photo-box">Photo 1</div>
+    <div class="photo-box">Photo 2</div>
+    <div class="photo-box">Photo 3</div>
+  </div>
+
+</section>
+
+<section class="note">
+
+  <h3>More Photos Coming Soon</h3>
+
+  <p>
+    Photos of our management committee,
+    teachers, students, achievements,
+    and programmes will be added here soon.
+  </p>
+
+</section>
+
+<div class="home-button">
+  <a href="index.html">Back to Home</a>
+</div>
+
+</main>
+
+<footer>
+  <p><strong>Madrasa Al-Islah</strong></p>
+  <p>Islamic Education & General Education</p>
+  <p>&copy; 2026 Madrasa Al-Islah. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
